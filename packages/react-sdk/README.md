@@ -35,6 +35,21 @@ export default function App() {
 }
 ```
 
+## Storybook
+
+A complete Storybook is included to visually explore components, hooks, and end-to-end examples.
+
+- Start Storybook (from repo root):
+  ```bash
+  npm run -w @instruct/memmachine-react-sdk storybook
+  ```
+- Build static Storybook:
+  ```bash
+  npm run -w @instruct/memmachine-react-sdk build-storybook
+  ```
+
+Addons are configured for accessibility and responsive testing. Stories use a mocked client for safe, offline demos.
+
 ## Provider and Context
 
 - `MemMachineProvider` accepts all `ClientOptions` (except `fetch`).
@@ -77,8 +92,3 @@ These are intentionally unstyled and accessible, designed for easy composition a
 ## Type safety
 
 - All props, hooks, generics, and return types are strictly typed and align with the underlying SDK.
-
-## Next steps
-
-- Generate full documentation and story-driven examples (Storybook recommended).
-- Package both SDKs into a single repository with CI for type checks.
