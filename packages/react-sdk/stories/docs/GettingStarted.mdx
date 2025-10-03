@@ -1,0 +1,34 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Docs/Getting Started" />
+
+# React SDK Storybook
+
+This Storybook showcases the React TypeScript SDK components, hooks, and integration patterns.
+
+## Prerequisites
+
+- Node.js 18+
+- npm 9+ (or pnpm/yarn)
+
+## Install dependencies
+
+From the monorepo root:
+
+```bash
+npm install
+```
+
+## Run Storybook (package only)
+
+```bash
+npm run -w @instruct/memmachine-react-sdk storybook
+```
+
+## Build static Storybook
+
+```bash
+npm run -w @instruct/memmachine-react-sdk build-storybook
+```
+
+The static site will be emitted to `packages/react-sdk/storybook-static`.
