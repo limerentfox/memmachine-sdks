@@ -1,0 +1,12 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Docs/Best Practices" />
+
+# Best Practices
+
+- Use `MemMachineProvider` high in your tree so components and hooks can access the client.
+- For tests and Storybook, mock the client via the provider’s `client` prop (as shown in these stories).
+- Keep components presentational and push data-fetching to hooks; components receive data via props or wrappers.
+- Use the `status/loading/error` states from hooks to render clear UI feedback and avoid flicker.
+- Ensure accessibility: visible focus states, semantic roles, and `aria-*` attributes are included where appropriate.
+- Verify behaviour across breakpoints with the “Viewport” toolbar.
