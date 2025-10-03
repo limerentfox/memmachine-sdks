@@ -15,7 +15,13 @@
     "clean": "rimraf dist",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
-  "keywords": ["memmachine", "sdk", "react", "hooks", "typescript"],
+  "keywords": [
+    "memmachine",
+    "sdk",
+    "react",
+    "hooks",
+    "typescript"
+  ],
   "author": "Instruct",
   "license": "MIT",
   "peerDependencies": {
@@ -63,5 +69,10 @@
       "import": "./dist/utils/index.js"
     },
     "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/limerentfox/memmachine-sdks",
+    "directory": "packages/react-sdk"
   }
 }
