@@ -14,17 +14,34 @@
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
-  "engines": { "node": ">=18" },
+  "engines": {
+    "node": ">=18"
+  },
   "devDependencies": {
     "typescript": "^5.6.3"
   },
-  "keywords": ["memmachine", "sdk", "typescript", "memory", "llm", "mcp"],
+  "keywords": [
+    "memmachine",
+    "sdk",
+    "typescript",
+    "memory",
+    "llm",
+    "mcp"
+  ],
   "author": "Instruct",
   "license": "MIT",
-  "repository": { "type": "git", "url": "https://github.com/your-org/memmachine-sdk" }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/limerentfox/memmachine-sdks",
+    "directory": "packages/js-sdk"
+  }
 }
