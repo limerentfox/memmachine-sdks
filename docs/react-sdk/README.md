@@ -22,6 +22,22 @@ yarn add @instruct/memmachine-react-sdk @instruct/memmachine-sdk react react-dom
 - React 18+
 - TypeScript 5+ recommended
 
+## Storybook
+
+Explore components, hooks, and full integrations interactively via Storybook. From the repo root:
+
+```bash
+npm run -w @instruct/memmachine-react-sdk storybook
+```
+
+Build a static Storybook site:
+
+```bash
+npm run -w @instruct/memmachine-react-sdk build-storybook
+```
+
+Addons are configured for accessibility and responsive testing, and stories use a mocked client for offline demos.
+
 ## Setup with Provider and Context
 Wrap your app with the provider. The provider accepts all `ClientOptions` from `@instruct/memmachine-sdk` except `fetch` (managed internally):
 
